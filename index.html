@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" type="x-icon" href="hangman.png" />
+
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hangman Game</h1>
+      <div class="hangman-container">
+        <div class="hangman">
+          <div class="head hidden"></div>
+          <div class="body hidden"></div>
+          <div class="left-arm hidden"></div>
+          <div class="right-arm hidden"></div>
+          <div class="left-leg hidden"></div>
+          <div class="right-leg hidden"></div>
+          <div class="top-hook"></div>
+          <div class="sky-hook"></div>
+
+          <div class="stand-hook"></div>
+
+          <div class="ground-hook"></div>
+        </div>
+      </div>
+      <div class="word-display" id="wordDisplay"></div>
+      <div class="guesses">Guesses: <span id="guesses"></span></div>
+      <div class="guess">
+        <form action="">
+          <input type="text" id="guessInput" maxlength="1" />
+          <button id="guessButton" type="submit">Guess</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

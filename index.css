@@ -1,0 +1,162 @@
+body {
+  background-color: #4b4949;
+}
+.guess {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+button {
+  background-color: #4b4949;
+  color: aliceblue;
+  border-radius: 7px;
+  height: 25px;
+}
+.container {
+  background-color: aliceblue;
+  border-radius: 15px;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.hidden {
+  display: none;
+}
+.hangman {
+  background-color: #4b4949;
+  height: 350px;
+  width: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.head {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ff3333;
+  top: 50px;
+  left: 115px;
+  position: absolute;
+  z-index: 9;
+}
+.body {
+  width: 10px;
+  height: 70px;
+  background-color: #ff3333;
+  position: absolute;
+  top: 120px;
+  left: 145px;
+}
+
+.top-hook {
+  width: 70px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(90deg);
+
+  top: 20px;
+  left: 115px;
+}
+.sky-hook {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  right: 55px;
+}
+.stand-hook {
+  width: 200%;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(90deg);
+  left: -55px;
+  top: 50px;
+}
+.ground-hook {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+}
+.left-arm,
+.right-arm {
+  width: 70px;
+  height: 10px;
+  background-color: #ff3333;
+}
+
+.left-arm {
+  transform: rotate(-45deg);
+
+  position: absolute;
+  top: 120px;
+  left: 145px;
+}
+
+.right-arm {
+  transform: rotate(45deg);
+  right: 0;
+  position: absolute;
+  top: 120px;
+  right: 145px;
+}
+
+.left-leg,
+.right-leg {
+  width: 70px;
+  height: 10px;
+  background-color: #ff3333;
+  top: 145px;
+}
+
+.left-leg {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 200px;
+  right: 140px;
+}
+
+.right-leg {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 200px;
+  left: 140px;
+}
+
+.word-display {
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.guesses {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 20px;
+  border-radius: 7px;
+  border: 2px solid #4b4949;
+}
