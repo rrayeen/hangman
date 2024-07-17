@@ -73,14 +73,14 @@ const random = async function () {
     function checkWin() {
       wordDisplay.textContent = "Congratulations! You won!";
       guessInput.value = "";
-      guessInput.setAttribute("placeHolder", `The word is ${selectedWord} ,Retry ?`);
+      guessInput.setAttribute("placeHolder", `The word is '${selectedWord}' ,Retry ?`);
       guessInput.setAttribute("maxlength", `0`);
     }
     
     function checkLoss() {
       wordDisplay.textContent = "Game over! You lost.";
       guessInput.value = "";
-      guessInput.setAttribute("placeHolder", `The word is ${selectedWord}`);
+      guessInput.setAttribute("placeHolder", `The word is '${selectedWord}'`);
       guessInput.setAttribute("maxlength", `0`);
     }
     function display() {
