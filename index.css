@@ -1,6 +1,17 @@
 body {
   background-color: #4b4949;
 }
+.question {
+  font-weight: 600;
+  font-size: 18px;
+}
+#question{
+  font-size: medium;
+  font-weight: bold;
+}
+#reload{
+  margin-bottom: 30px;
+}
 .guess {
   display: flex;
   gap: 10px;
